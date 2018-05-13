@@ -10,5 +10,15 @@ function factorialize(num){
         return factorialize(num-1) * num;
     }
 }
-
 factorialize(5);
+
+// Alternative solution without recursion.
+function factorializeV2(num) {
+
+    for (var i = num - 1; i > 0; i--) {
+        num = num * i
+    }
+    return num
+}
+
+factorializeV2(5);
